@@ -320,7 +320,7 @@ Costo = (Número de invocaciones × precio_invocación) +
 
 ---
 
-## Informe Ejecutivo
+## Informe
 
 ### Resumen General
 
