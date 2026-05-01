@@ -40,7 +40,7 @@ Se creó una Function App en Azure con las siguientes configuraciones:
 
 **Evidencia de creación:**
 
-![](images/part3/functionAppCreation.png)
+![](images/part3/functionappcreation.png)
 
 ---
 
@@ -82,7 +82,7 @@ Se realizó una prueba exitosa de la función Fibonacci directamente en el porta
 
 ![](images/part3/part3-test-function.png)
 
-![](images/part3/functionAppTest.png)
+![](images/part3/functionapptest.png)
 
 **Resultado de la prueba:**
 - **Entrada**: `{"nth": 50}`
@@ -166,15 +166,15 @@ function fibonacciMemo(n) {
 
 **Prueba 1: Fibonacci(1000)**
 
-![](images/part3/newmanNewFibo1000.png)
+![](images/part3/newmannewfibo1000.png)
 
 **Prueba 2: Fibonacci(10000)**
 
-![](images/part3/newmanNewFibo10000.png)
+![](images/part3/newmannewfibo10000.png)
 
 **Prueba 3: Fibonacci(50000)**
 
-![](images/part3/newmanNewFibo50000.png)
+![](images/part3/newmannewfibo50000.png)
 
 **Consumo de memoria:**
 
@@ -182,7 +182,7 @@ function fibonacciMemo(n) {
 
 **Error en números extremadamente grandes:**
 
-![](images/part3/errorFibo.png)
+![](images/part3/errorfibo.png)
 
 **Comportamiento observado:**
 
@@ -328,23 +328,23 @@ Se completó exitosamente el laboratorio práctico de **Escalamiento en Azure co
 
 ### Objetivos Logrados
 
-✅ **Objetivo 1:** Crear y desplegar una Function App en Azure  
+**Objetivo 1:** Crear y desplegar una Function App en Azure  
    - Function App creada: `fibonacci-app-ana` en región Canada Central
    - Plan seleccionado: Flex Consumption (balance costo-rendimiento)
    - Autenticación y despliegue exitosos desde VS Code
 
-✅ **Objetivo 2:** Implementar función de Fibonacci iterativa  
+**Objetivo 2:** Implementar función de Fibonacci iterativa  
    - Algoritmo iterativo usando librería `big-integer` para números grandes
    - URL: `https://fibonacci-app-ana-ejgtgnd4b0bugecm.canadacentral-01.azurewebsites.net/api/Fibonaccci`
    - Resultado Fibonacci(50): `12586269025` (verificado correcto)
 
-✅ **Objetivo 3:** Pruebas de carga con 10 peticiones concurrentes  
+**Objetivo 3:** Pruebas de carga con 10 peticiones concurrentes  
    - 10 peticiones ejecutadas exitosamente (0 errores)
    - Tiempo promedio de respuesta: **192 ms**
    - Tiempo total: 2.643 segundos
    - Escalabilidad: **EXITOSA** - Sistema manejó carga sin problemas
 
-✅ **Objetivo 4:** Implementar optimización con memoization  
+**Objetivo 4:** Implementar optimización con memoization  
    - Función FibonacciMemo creada con recursión + cache global
    - Mejora de rendimiento: 10x más rápida en llamadas subsecuentes
    - Limitaciones identificadas y documentadas
@@ -396,7 +396,7 @@ Se completó exitosamente el laboratorio práctico de **Escalamiento en Azure co
 4. **Escalabilidad automática funciona correctamente** sin intervención manual
 5. **Storage Account es crítico** para logging y persistencia
 
-### Recomendaciones
+### Observaciones
 
 - Para números > 100,000: Usar algoritmos iterativos en lugar de recursivos
 - Para persistence de cache: Implementar Redis o Cosmos DB
